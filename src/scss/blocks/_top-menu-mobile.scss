@@ -1,0 +1,34 @@
+.top-menu-mobile {
+    background-color: $light-brown;
+    position: relative;
+
+    &__text {
+        font-size: $baseline;
+        text-transform: uppercase;
+        color: white;
+        line-height: 50px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    &__icon-wrapper {
+        width: 70px;
+        height: 100%;
+        background-color: $menu-button-brown;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__menu-icon {
+        width: 36px;
+        height: 29px;
+    }
+
+    &__list-wrapper {
+        display: none;
+    }
+}

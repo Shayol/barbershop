@@ -16,8 +16,7 @@ module.exports = {
   },
   devtool: "source-map",
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -31,27 +30,31 @@ module.exports = {
         test: /\.html$/,
         //exclude: /index\.html$/, //without this HtmlWebPackPlugin will not work with template file correctly
         include: path.join(__dirname, 'src/html'),
-        use: [
-          {
-            loader: "html-loader",
-            options: {
-              minimize: true,
-              interpolate: true
-            }
+        use: [{
+          loader: "html-loader",
+          options: {
+            minimize: true,
+            interpolate: true
           }
-        ]
+        }]
       },
       {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          { loader: 'css-loader', options: { importLoaders: 1 } },
           {
-            loader: 'postcss-loader', options: {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
               sourceMap: true,
               ident: 'postcss',
               plugins: () => [
-                postcssPresetEnv(/* options */)
+                postcssPresetEnv( /* options */ )
               ]
             }
           },
@@ -81,6 +84,13 @@ module.exports = {
             name: '[name].[ext]',
             outputPath: 'img/'
           }
+        }
+      },
+      {
+        test: /\.svg$/,
+        use: {
+          loader: 'svg-sprite-loader',
+          options: {}
         }
       }
     ]

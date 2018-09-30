@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('../fonts/PT_Sans-Narrow/regular/PT_Sans-Narrow-Regular.woff2') format('woff2'), url('../fonts/PT_Sans-Narrow/regular/PT_Sans-Narrow-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('../fonts/PT_Sans-Narrow/bold/PT_Sans-Narrow-Bold.woff2') format('woff2'), url('../fonts/PT_Sans-Narrow/bold/PT_Sans-Narrow-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans Narrow';
+    font-size: 18px;
+    height: 100%;
+}
+
+$baseline: 18px;
+
+$brown: #242424;
+$light-brown: #826550;
+$menu-button-brown: #6a4d38;
