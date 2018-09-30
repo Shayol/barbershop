@@ -27,8 +27,34 @@
         width: 36px;
         height: 29px;
     }
+    &__close {
+        width: 70px;
+        height: 50px;
+        background-color: $menu-button-brown;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__menu-close {
+        width: 26px;
+        height: 25px;
+    }
 
     &__list-wrapper {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        align-items: flex-top;
+        z-index: 2;
+    }
+
+    &__menu-list {
+        flex-grow: 1;
+    }
+
+    @media(min-width: $tablet) {
         display: none;
     }
 }

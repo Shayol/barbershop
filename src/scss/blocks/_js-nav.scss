@@ -1,0 +1,13 @@
+.js-nav {
+    &\--closed {
+        .js-nav__menu-wrapper  {
+            display: none;
+        }
+    }
+
+    &\--opened {
+        .js-nav__menu-wrapper  {
+            display: flex;
+        }        
+    }
+}

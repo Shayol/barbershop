@@ -7,4 +7,8 @@
     &__svg {
         width: 70%;
     }
+
+    @media(min-width: $tablet) {
+        display: none;
+    }
 }
