@@ -1,0 +1,11 @@
+.lie {
+    color: white;
+    opacity: 0.3;
+    font-size: 20px;
+    line-height: $baseline;
+    text-align: center;
+
+    &\--statistics {
+        color: black;
+    }
+}

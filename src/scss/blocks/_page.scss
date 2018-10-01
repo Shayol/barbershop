@@ -7,6 +7,18 @@
         height: 50px;
     }
     &__hero-index {
-        
+        display: none;
+    }
+
+    @media(min-width: $tablet) {
+        &__top-logo {
+            display: none;
+        }
+        &__top-menu-mobile {
+            display: none;
+        }
+        &__hero-index {
+            display: block;
+        }
     }
 }

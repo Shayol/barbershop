@@ -1,0 +1,5 @@
+.invisible-on-desktop {
+    @media(min-width: $desktop) {
+        display: none;
+    }
+}

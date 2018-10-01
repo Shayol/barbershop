@@ -1,8 +1,22 @@
 @import 'reset';
 @import 'common';
 @import 'blocks/container';
+@import 'blocks/section';
+@import 'blocks/invisible-on-mobile';
+@import 'blocks/invisible-on-tablet';
+@import 'blocks/invisible-on-desktop';
 @import 'blocks/top-logo';
 @import 'blocks/page';
 @import 'blocks/top-menu-mobile';
 @import 'blocks/js-nav';
 @import 'blocks/mobile-menu';
+
+//index page only
+@import 'blocks/statistics';
+@import 'blocks/lie';
+@import 'blocks/slider';
+@import 'blocks/features';
+@import 'blocks/js-active-slide';
+@import 'blocks/info';
+@import 'blocks/news';
+@import 'blocks/button-link';

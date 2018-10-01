@@ -1,0 +1,39 @@
+.features {
+    padding: 41px 20px 47px 20px;
+    text-align: center;
+    position: relative;
+    
+    &__advantage-1 {
+        width: 95px;
+        height: 94px;
+    }
+    &__advantage-2 {
+        width: 95px;
+        height: 88px;
+    }
+    &__advantage-2 {
+        width: 95px;
+        height: 91px;
+    }
+
+    &__advantage-3 {
+        width: 95px; 
+        height: 88px;
+    }
+
+    &__header {
+        font-size: 1.1 * $baseline;
+        line-height: 1em;
+        color: #f7f4f1;
+        font-weight: bold;
+        padding-bottom: 0.5 * $baseline;
+        padding-top: 32px;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-size: 20px;
+        line-height: $baseline;
+        color: #f7f4f1;
+        font-weight: 400;
+    }
+}

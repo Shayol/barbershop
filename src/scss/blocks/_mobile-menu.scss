@@ -23,11 +23,12 @@
     }
     &__link {
         color: white;
-        font-size: $baseline;
+        font-size: 0.66 * $baseline;
         font-weight: 400;
         line-height: 1.33em;
         text-transform: uppercase;
         text-decoration: none;
+        font-weight: bold;
     }
     &__enter-link {
         text-transform: none;

@@ -1,0 +1,53 @@
+.statistics {
+    &__text-block {
+         padding-top: 1.1 * $baseline;
+         padding-bottom: $baseline;
+         background-color: white;
+         text-align: center;
+    }
+    &__header {
+        font-size: 1.11 * $baseline;
+        line-height: 1em;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 0.6 * $baseline;
+    }
+    &__text-block-text {
+        font-size: 20px;
+        line-height: $baseline;
+        color: black;
+        font-weight: 400;
+    }
+    &__section {
+        height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &__item {
+        @each $name, $value in $grey-colors  {
+            &\--#{$name} {
+                background-color: $value;
+            }
+        }
+    }
+
+    &__number{
+        font-size: 40px;
+        line-height: 1;
+        color: white;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+    &__text {
+        font-size: 0.66 * $baseline;
+        line-height: 1em;
+        color: white;
+        text-align: right;
+        flex-basis: 50%;
+    }
+    
+}
