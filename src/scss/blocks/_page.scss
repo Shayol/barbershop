@@ -17,8 +17,12 @@
         &__top-menu-mobile {
             display: none;
         }
+        &__hero {
+            height: 286px;
+        }
         &__hero-index {
             display: block;
+            height: 469px;
         }
     }
 }

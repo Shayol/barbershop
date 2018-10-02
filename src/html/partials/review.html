@@ -17,7 +17,12 @@
         </div>
         <div class="carousel__content slider__content review__content">
             <div class="review__item carousel__item slider__item" id="review1">
-                <img src="../../img/travis.png" alt="trevis photo" class="review__photo">
+                <picture class="review__photo">
+                    <source media="(min-width: 1200px)" srcset="../../img/trevis-desktop.png">
+                    <source media="(min-width: 768px)" srcset="../../img/trevis-tablet.png">
+                    <source media="(min-width: 0px)" srcset="../../img/trevis-mobile.png">
+                    <img class="review__photo" src="../../img/trevis-desktop.png" alt="This picture loads on non-supporting browsers.">
+                </picture>
                 <div class="review__text-content">
                     <h3 class="review__author">Трэвис Баркер</h3>
                     <p class="review__text">
@@ -56,9 +61,9 @@
             <label for="radio-3" class="carousel__next-item">&#9658</label>
         </div>
 
-        <div class="section slider__nav carousel__nav review__controls">
+        <div class="slider__nav carousel__nav review__controls">
 
-            <a href="#review1" class="carousel__nav-link slider__nav-item">
+            <a href="#review1" class="carousel__nav-link slider__nav-item js-active-slide">
             </a>
 
             <a href="#review2" class="carousel__nav-link slider__nav-item">

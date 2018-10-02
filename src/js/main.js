@@ -7,6 +7,11 @@ import advant1 from '../icons/advantage-1-illustration.svg';
 import advant2 from '../icons/advantage-2-illustration.svg';
 import advant3 from '../icons/advantage-3-illustration.svg';
 import featuresTriangle from '../icons/triangle-bottom.svg';
+import insta from '../icons/instagram.svg';
+import facebook from '../icons/facebook.svg';
+import vk from '../icons/vk.svg';
+import logotypeDesk from '../icons/logotype-desktop.svg';
+
 
 
 window.addEventListener("load", function () {

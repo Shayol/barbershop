@@ -3,7 +3,7 @@
     &--features .js-active-slide {
         background-color: white;
     }
-    &--news .js-active-slide {
+    &--review .js-active-slide {
         background-color: #353535;
     }
     &__content {
@@ -18,12 +18,12 @@
         margin-top: $baseline;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
         font-size: 0;
     }
     &__nav-item {
         width: 7px;
         height: 7px;
-        border: 1px solid #ffffff;
         transform: rotate(45deg);
         display: inline-block;
 
@@ -32,4 +32,15 @@
             margin-right: 25px;
         }
     }
+
+    &--features .slider__nav-item {
+        border: 1px solid #ffffff;
+    }
+
+    &--review .slider__nav-item {
+        border: 1px solid map-get($grey-colors, dark-grey);
+    }
+
+
+
 }

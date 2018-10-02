@@ -1,0 +1,19 @@
+.top-menu {
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    &__item {
+        height: 100%;
+        margin-right: 32px;
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        color: white;
+        font-size: 0.66 * $baseline;
+        line-height: 1;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+    }
+}

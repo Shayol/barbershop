@@ -6,7 +6,7 @@
         height: 100%;
         width: 8px;
         top: 0;
-        left: 0; // background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 26%, rgba(0, 0, 0, 0.1) 51%, rgba(0, 0, 0, 0.05) 100%);
+        left: 0; 
         background: rgb(0, 0, 0);
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.05) 100%);
     }
@@ -24,7 +24,6 @@
     &__link {
         color: white;
         font-size: 0.66 * $baseline;
-        font-weight: 400;
         line-height: 1.33em;
         text-transform: uppercase;
         text-decoration: none;

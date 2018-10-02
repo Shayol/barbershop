@@ -1,0 +1,13 @@
+.hero {
+    background-image: url("../img/back-tablet.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    &__logo {
+        margin-top: 40px;
+    }
+
+    &__top-menu {
+        height: 72px;
+    }
+}

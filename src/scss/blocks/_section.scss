@@ -1,4 +1,8 @@
 .section {
     padding-left: 20px;
     padding-right: 20px;
+    @media(min-width: $tablet) {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
 }

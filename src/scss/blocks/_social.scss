@@ -1,0 +1,31 @@
+.social {
+    &__icons-wrapper {
+        display: flex;
+        border-top: 1px solid $footer-border-color;
+        border-bottom: 1px solid $footer-border-color;
+    }
+    &__icon {
+        flex-basis: 33.33%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    &__facebook {
+        border-left: 1px solid $footer-border-color;
+        border-right: 1px solid $footer-border-color;
+    }
+    &__instagram-svg {
+        width: 36px;
+        height: 36px;
+    }
+    &__facebook-svg {
+        width: 18px;
+        height: 39px;
+    }
+    &__vk-svg {
+        width: 23px;
+        height: 26px;
+    }
+}
