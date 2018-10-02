@@ -1,0 +1,116 @@
+.carousel {
+    &__radio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 0;
+    }
+
+    &__content {
+        -ms-overflow-style: none; // IE 10+
+    }
+
+    &__content::-webkit-scrollbar {
+        display: none; // Safari and Chrome
+    }
+
+
+    @media(min-width: $tablet) {
+        position: relative;
+
+        &__content {
+            position: absolute;
+            left: 50px;
+            right: 50px;
+        }
+
+        &__item {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+        }
+
+        &__prev,
+        &__next {
+            display: flex;
+            position: absolute;
+            top: 0;
+            width: 50px;
+            height: 100%;
+            z-index: 3;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        &__prev {
+            left: 0;
+        }
+
+        &__next {
+            right: 0;
+        }
+
+        &__prev-item {
+            cursor: pointer;
+            display: none;
+        }
+
+        &__next-item {
+            cursor: pointer;
+            display: none;            
+        }
+
+        @for $i from 1 through 3 {
+            &__radio:nth-child(#{$i}):checked {
+
+                ~.carousel__content>.carousel__item
+                {
+                    opacity: 0;
+                    z-index: 0;
+                }
+
+                ~.carousel__content .carousel__prev-item,
+                ~.carousel__content .carousel__next-item {
+                    display: none;
+                }
+
+                ~.carousel__content .carousel__nav-item {
+                    background-color: transparent;
+                }
+
+                ~.carousel__content .carousel__nav-item:nth-child(#{$i}) {
+                    background-color: #353535;
+                }
+
+                ~.carousel__content>.carousel__item:nth-child(#{$i}) {
+                    opacity: 1;
+                    z-index: 1;
+                }
+
+                ~.carousel__prev>.carousel__prev-item:nth-child(#{$i - 1}) {
+                    display: block;
+
+                    @if $i==1 {
+                        display: none;
+                    }
+                }
+
+                ~.carousel__next>.carousel__next-item:nth-child(#{$i + 1}) {
+                    display: block;
+
+                    @if $i==3 {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+}

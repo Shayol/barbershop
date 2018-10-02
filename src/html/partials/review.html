@@ -5,27 +5,25 @@
     <button class="review__leave-review-buton button-link invisible-on-mobile">
         Оставить свой
     </button>
-    <div class="carousel slider">
+    <div class="carousel review__container slider slider--review">
         <input type="radio" class="carousel__radio" name="carousel" id="radio-1" checked>
         <input type="radio" class="carousel__radio" name="carousel" id="radio-2">
         <input type="radio" class="carousel__radio" name="carousel" id="radio-3">
 
         <div class="carousel__prev invisible-on-mobile">
-            <label for="radio-1" class="carousel__prev-item"></label>
-            <label for="radio-2" class="carousel__prev-item"></label>
-            <label for="radio-3" class="carousel__prev-item"></label>
+            <label for="radio-1" class="carousel__prev-item">&#9668</label>
+            <label for="radio-2" class="carousel__prev-item">&#9668</label>
+            <label for="radio-3" class="carousel__prev-item">&#9668</label>
         </div>
-        <div class="carousel__container slider__content review__container">
+        <div class="carousel__content slider__content review__content">
             <div class="review__item carousel__item slider__item" id="review1">
-                <div class="review__item-wrapper">
-                    <img src="../../img/travis.png" alt="trevis photo" class="review__photo">
-                    <div class="review__text-content">
-                        <h3 class="review__author">Трэвис Баркер</h3>
-                        <p class="review__text">
-                            Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую
-                            татуировку!
-                        </p>
-                    </div>
+                <img src="../../img/travis.png" alt="trevis photo" class="review__photo">
+                <div class="review__text-content">
+                    <h3 class="review__author">Трэвис Баркер</h3>
+                    <p class="review__text">
+                        Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую
+                        татуировку!
+                    </p>
                 </div>
             </div>
             <div class="review__item carousel__item slider__item" id="review2">
@@ -53,20 +51,20 @@
 
         </div>
         <div class="carousel__next invisible-on-mobile">
-            <label for="radio-1" class="carousel__next-item"></label>
-            <label for="radio-2" class="carousel__next-item"></label>
-            <label for="radio-3" class="carousel__next-item"></label>
+            <label for="radio-1" class="carousel__next-item">&#9658</label>
+            <label for="radio-2" class="carousel__next-item">&#9658</label>
+            <label for="radio-3" class="carousel__next-item">&#9658</label>
         </div>
 
-        <div class="section slider__nav carousel__nav review__controls controls">
+        <div class="section slider__nav carousel__nav review__controls">
 
-            <a href="#review1" class="controls__link carousel__nav-link slider__nav-item">
+            <a href="#review1" class="carousel__nav-link slider__nav-item">
             </a>
 
-            <a href="#review2" class="controls__link carousel__nav-link controls__link--central slider__nav-item">
+            <a href="#review2" class="carousel__nav-link slider__nav-item">
             </a>
 
-            <a href="#review3" class="controls__link carousel__nav-link slider__nav-item">
+            <a href="#review3" class="carousel__nav-link slider__nav-item">
             </a>
 
         </div>

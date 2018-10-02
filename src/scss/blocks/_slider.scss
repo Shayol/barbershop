@@ -1,4 +1,11 @@
 .slider {
+
+    &--features .js-active-slide {
+        background-color: white;
+    }
+    &--news .js-active-slide {
+        background-color: #353535;
+    }
     &__content {
         display: flex;
         width: 100%;

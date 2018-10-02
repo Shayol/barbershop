@@ -1,0 +1,31 @@
+.review {
+    &__header {
+        font-size: 1.1 * $baseline;
+        line-height: 1em;
+        color: black;
+        padding-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    @media(min-width: $tablet) {
+
+        &__container {
+            border: 1px solid $border-grey;
+            height: 160px;
+        }
+
+        &__content {
+            height: 160px;
+        }
+
+        &__item {
+            border-right: 1px solid $border-grey;
+            border-left: 1px solid $border-grey;
+        }
+        
+    }
+
+
+}

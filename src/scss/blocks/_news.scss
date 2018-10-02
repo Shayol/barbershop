@@ -1,6 +1,8 @@
 .news {
     padding-top: 37px;
+    padding-bottom: $baseline;
     background-color: $beige;
+    border-bottom: 1px solid $border-grey;
 
     &__item {
         display: flex;
@@ -8,7 +10,7 @@
         padding-bottom: 18px;
         justify-content: space-between;
         &\--second{
-            border-top: 1px solid #e5ddd5;
+            border-top: 1px solid $border-grey;
         }
         &\--third {
             display: none;
