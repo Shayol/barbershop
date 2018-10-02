@@ -11,6 +11,8 @@ import insta from '../icons/instagram.svg';
 import facebook from '../icons/facebook.svg';
 import vk from '../icons/vk.svg';
 import logotypeDesk from '../icons/logotype-desktop.svg';
+import logotypeTabl from '../icons/logotype-tablet.svg';
+
 
 
 
@@ -34,6 +36,21 @@ window.addEventListener("load", function () {
             });
         }
     }
+
+    (function setActiveLocation() {
+        let links = document.querySelectorAll(".js-menu-item");
+        let currentHref = window.location.href;
+
+        if (links.length > 0) {
+            links.forEach(function (item) {
+                if (currentHref == item.querySelector("a").href) {
+                    item.classList.add("top-menu__item--active");
+                }
+            });
+        }
+
+
+    })();
 
     mobileMenu();
 });

@@ -4,9 +4,22 @@
     justify-content: flex-start;
     &__item {
         height: 100%;
-        margin-right: 32px;
+        margin-right: 33px;
         display: flex;
         align-items: center;
+        position: relative;
+        &\--active {
+            &::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                height: 3px;
+                background-color: $light-brown;
+                z-index: 2;
+            }
+        }
     }
     &__link {
         color: white;

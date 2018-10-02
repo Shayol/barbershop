@@ -1,5 +1,4 @@
 .slider {
-
     &--features .js-active-slide {
         background-color: white;
     }
@@ -26,21 +25,25 @@
         height: 7px;
         transform: rotate(45deg);
         display: inline-block;
-
         &:nth-child(2) {
             margin-left: 25px;
             margin-right: 25px;
         }
     }
-
     &--features .slider__nav-item {
         border: 1px solid #ffffff;
     }
-
     &--review .slider__nav-item {
         border: 1px solid map-get($grey-colors, dark-grey);
     }
-
-
-
+    @media (min-width: $tablet) {
+        &\--features {
+            .slider__content {
+                display: block;
+            }
+            .slider__nav {
+                display: none;
+            }
+        }
+    }
 }

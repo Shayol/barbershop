@@ -2,14 +2,12 @@
     &__top-logo {
         height: 85px;
     }
-
     &__top-menu-mobile {
         height: 50px;
     }
     &__hero-index {
         display: none;
     }
-
     @media(min-width: $tablet) {
         &__top-logo {
             display: none;
@@ -23,6 +21,15 @@
         &__hero-index {
             display: block;
             height: 469px;
+        }
+    }
+    @media(min-width: $desktop) {
+        &__hero {
+            height: 379px;
+        }
+        &__hero-index {
+            display: block;
+            height: 720px;
         }
     }
 }

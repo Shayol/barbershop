@@ -2,11 +2,18 @@
     background-image: url("../img/back-tablet.png");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-
     &__logo {
         margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 370px;
+        height: 101px;
     }
-
+    &__logo-svg {
+        display: inline-block;
+        width: 100%;
+        height: 101px;
+    }
     &__top-menu {
         height: 72px;
     }

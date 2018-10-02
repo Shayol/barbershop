@@ -1,5 +1,5 @@
-.ivisible-on-tablet {
+.invisible-on-tablet {
     @media (min-width: $tablet) and (max-width: $desktop - 1px) {
         display: none;
-    } 
+    }
 }
