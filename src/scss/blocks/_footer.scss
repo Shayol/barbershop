@@ -2,14 +2,12 @@
     background-color: $footer-color;
     color: white;
     padding-top: 1.25 * $baseline;
-    padding-bottom: 0.88 * $baseline;
+    padding-bottom: 24px;
     text-align: center;
     border-top: 1px solid $footer-border-color;
-
     &__info {
         padding-bottom: 26px;
     }
-
     &__barbershop-name {
         font-size: 0.66 * $baseline;
         color: white;
@@ -17,17 +15,14 @@
         font-weight: 700;
         padding-bottom: 7px;
     }
-
     &__text {
         font-size: 0.66 * $baseline;
         color: white;
         line-height: $baseline;
     }
-
     &__address {
         padding-bottom: 0.66 * $baseline;
     }
-
     &__phone {
         border: 1px solid $footer-border-color;
         font-weight: bold;
@@ -39,5 +34,37 @@
         margin-left: -20px;
         margin-right: -20px;
     }
-    
+    @media(min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 48px;
+        padding-bottom: 60px;
+        &__barbershop-name {
+            text-transform: uppercase;
+        }
+        &__developed-by {
+            order: 1;
+            flex-basis: 25%;
+        }
+        &__social {
+            flex-basis: 100%;
+            order: 2;
+            margin: 50px 0 0 0;
+        }
+        &__info {
+            flex-basis: 50%;
+            padding-bottom: 0;
+            text-align: left;
+        }
+        &__address {
+            padding-bottom: 0;
+        }
+        &__phone {
+            border: none;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
 }

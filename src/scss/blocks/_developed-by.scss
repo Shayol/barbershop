@@ -1,6 +1,5 @@
 .developed-by {
     padding-top: $baseline;
-
     &__text {
         padding-bottom: 12px;
     }
@@ -13,5 +12,8 @@
         padding-top: 11px;
         padding-bottom: 12px;
         width: 100%;
+    }
+    @media(min-width: $tablet) {
+        padding-top: 0;
     }
 }
