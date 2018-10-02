@@ -1,6 +1,7 @@
 .review {
     padding-top: $baseline;
     padding-bottom: 2 * $baseline;
+    background-color: $beige;
     &__header {
         font-size: 1.1 * $baseline;
         line-height: 1em;
@@ -9,7 +10,6 @@
         font-weight: bold;
         text-transform: uppercase;
     }
-
     &__item {
         display: flex;
         justify-content: space-between;
@@ -18,14 +18,13 @@
     &__text-content {
         flex-basis: 75%;
     }
-
     &__photo {
         width: 50px;
         height: auto;
         margin-top: 5px;
     }
     &__author {
-        font-size: 0.88 * $baseline;
+        font-size: 24px;
         line-height: $baseline;
         font-weight: bold;
         color: black;
@@ -40,24 +39,48 @@
     &__container {
         margin-top: 30px;
     }
-
     @media(min-width: $tablet) {
-
+        padding-top: 36px;
+        padding-bottom: 72px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
         &__container {
             border: 1px solid $border-grey;
             height: 160px;
+            flex-basis: 100%;
+            margin-top: 35px;
         }
-
+        &__leave-review-buton {
+            flex-basis: 25%;
+        }
         &__content {
             height: 160px;
-        }
-
-        &__item {
             border-right: 1px solid $border-grey;
             border-left: 1px solid $border-grey;
         }
-        
+        &__item {
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 38px;
+        }
+        &__header {
+            font-size: 40px;
+            line-height: 30px;
+        }
+        &__nav {
+            padding: 11px 25px;
+            background-color: $beige;
+        }
+        &__photo {
+            width: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+        }
+        &__text-content {
+            flex-basis: 74%;
+        }
     }
-
-
 }

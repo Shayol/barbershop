@@ -70,6 +70,7 @@
     }
     @media(min-width: $tablet) {
         padding-top: 42px;
+        padding-bottom: 34px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -84,7 +85,7 @@
             flex-wrap: wrap;
             order: 2;
             flex-basis: 100%;
-            padding-top: 50px;
+            padding-top: 46px;
         }
         &__item {
             flex-basis: 50%;
