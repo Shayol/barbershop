@@ -21,6 +21,9 @@
             }
         }
     }
+    &__enter {
+        margin-left: auto;
+    }
     &__link {
         color: white;
         font-size: 0.66 * $baseline;
@@ -28,5 +31,17 @@
         text-transform: uppercase;
         text-decoration: none;
         font-weight: bold;
+    }
+    @media(min-width: $desktop) {
+        &__item {
+            margin-right: 31.5px;
+            margin-left: 31.5px;
+        }
+        &__enter {
+            margin-left: auto;
+        }
+        &__enter-img {
+            margin-right: 19px;
+        }
     }
 }
