@@ -1,8 +1,17 @@
 .info {
     background-color: $brown;
     position: relative;
-
     &__lie {
         padding-top: 16px;
+    }
+    &__statistics {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    @media(min-width: $tablet) {
+        &__statistics {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 }

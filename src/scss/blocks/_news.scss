@@ -3,20 +3,18 @@
     padding-bottom: $baseline;
     background-color: $beige;
     border-bottom: 1px solid $border-grey;
-
     &__item {
         display: flex;
         padding-top: 18px;
         padding-bottom: 18px;
         justify-content: space-between;
-        &\--second{
+        &\--second {
             border-top: 1px solid $border-grey;
         }
         &\--third {
             display: none;
         }
     }
-    
     &__date {
         width: 50px;
         height: 50px;
@@ -25,7 +23,7 @@
         background-color: black;
         margin-top: 10px;
         position: relative;
-
+        flex-shrink: 0;
         &::after {
             content: '';
             position: absolute;
@@ -37,7 +35,6 @@
             top: 100%;
             left: 0;
             box-sizing: border-box;
-
         }
     }
     &__day {
@@ -52,7 +49,6 @@
         color: white;
         display: inline-block;
     }
-
     &__header {
         font-size: 1.1 * $baseline;
         line-height: 1em;
@@ -68,9 +64,44 @@
         line-height: $baseline;
         flex-basis: 75%;
     }
-
     &__show {
         width: 100%;
         margin-top: 2px;
+    }
+    @media(min-width: $tablet) {
+        padding-top: 42px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        &__show {
+            order: 1;
+            width: initial;
+            flex-basis: 25%;
+        }
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+            order: 2;
+            flex-basis: 100%;
+            padding-top: 50px;
+        }
+        &__item {
+            flex-basis: 50%;
+            padding-top: 0;
+            padding-bottom: 0;
+            &\--second {
+                border-top: none;
+            }
+            justify-content: flex-start;
+        }
+        &__header {
+            font-size: 40px;
+            line-height: 30px;
+        }
+        &__text {
+            flex-basis: auto;
+            padding-left: 21px;
+        }
     }
 }

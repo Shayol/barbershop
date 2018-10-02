@@ -1,13 +1,13 @@
 .statistics {
     &__text-block {
-         padding-top: 1.1 * $baseline;
-         padding-bottom: $baseline;
-         background-color: white;
-         text-align: center;
+        padding-top: 1.1 * $baseline;
+        padding-bottom: $baseline;
+        background-color: white;
+        text-align: center;
     }
     &__header {
         font-size: 1.11 * $baseline;
-        line-height: 1em;
+        line-height: 1;
         color: black;
         font-weight: bold;
         text-transform: uppercase;
@@ -28,14 +28,14 @@
         padding-right: 20px;
     }
     &__item {
-        @each $name, $value in $grey-colors  {
+        @each $name,
+        $value in $grey-colors {
             &\--#{$name} {
                 background-color: $value;
             }
         }
     }
-
-    &__number{
+    &__number {
         font-size: 40px;
         line-height: 1;
         color: white;
@@ -43,11 +43,70 @@
         font-weight: bold;
     }
     &__text {
-        font-size: 0.66 * $baseline;
-        line-height: 1em;
+        font-size: 0.6666 * $baseline;
+        line-height: 1;
         color: white;
         text-align: right;
         flex-basis: 50%;
     }
-    
+    @media(min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        &__section {
+            flex-direction: column;
+            height: 160px;
+            align-items: flex-start;
+            flex-basis: 50%;
+            padding-left: 35px;
+            padding-top: $baseline;
+            padding-bottom: $baseline;
+        }
+        &__number {
+            font-size: 72px; // padding-bottom: 14px;
+            // line-height: 0.8;
+        }
+        &__text {
+            flex-basis: auto;
+            font-size: 20px;
+            line-height: $baseline;
+        }
+        &__text-block {
+            height: 184px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: left;
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            &::before {
+                content: '';
+                height: 22px;
+                width: 22px;
+                position: absolute;
+                right: 100%;
+                top: 42px;
+                border-top: 22px solid white;
+                border-left: 22px solid transparent;
+                z-index: 11;
+            }
+        }
+        &__header {
+            flex-basis: 50%;
+            padding-left: 40px;
+            font-size: 40px;
+            text-transform: none;
+        }
+        &__text-block-text {
+            flex-basis: 50%;
+            padding-left: 32px;
+            padding-top: 4px;
+        }
+        &__lie {
+            padding-left: 40px;
+        }
+    }
 }
