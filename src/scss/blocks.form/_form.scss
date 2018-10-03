@@ -20,6 +20,9 @@
     &__additional-infomation {
         height: 112px;
     }
+    &__additional-services {
+        margin-bottom: 46px;
+    }
     &__section-header {
         font-size: 20px;
         font-weight: 400;
@@ -27,6 +30,9 @@
         text-transform: uppercase;
         color: black;
         text-align: center;
-        padding-bottom: 37px;
+        padding-bottom: 36px;
+    }
+    &__submit {
+        width: 100%;
     }
 }
