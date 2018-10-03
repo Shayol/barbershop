@@ -12,6 +12,11 @@ import facebook from '../icons/facebook.svg';
 import vk from '../icons/vk.svg';
 import logotypeDesk from '../icons/logotype-desktop.svg';
 import logotypeTabl from '../icons/logotype-tablet.svg';
+import beard1 from '../icons/beard-1.svg';
+import beard2 from '../icons/beard-2.svg';
+import beard3 from '../icons/beard-3.svg';
+import beard4 from '../icons/beard-4.svg';
+import beard5 from '../icons/beard-5.svg';
 
 
 

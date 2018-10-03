@@ -8,6 +8,9 @@
     &__hero-index {
         display: none;
     }
+    &__hero {
+        display: none;
+    }
     @media(min-width: $tablet) {
         &__top-logo {
             display: none;
@@ -16,6 +19,7 @@
             display: none;
         }
         &__hero {
+            display: block;
             height: 286px;
         }
         &__hero-index {

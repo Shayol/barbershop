@@ -17,90 +17,95 @@ module.exports = {
   devtool: "source-map",
   module: {
     rules: [{
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['env']
-          }
-        }
-      },
-      {
-        test: /\.html$/,
-        //exclude: /index\.html$/, //without this HtmlWebPackPlugin will not work with template file correctly
-        include: path.join(__dirname, 'src/html'),
-        use: [{
-          loader: "html-loader",
-          options: {
-            minimize: true,
-            interpolate: true,
-            attrs: ['img:src', 'source:srcset']
-          }
-        }]
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1
-            }
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              ident: 'postcss',
-              plugins: () => [
-                postcssPresetEnv( /* options */ )
-              ]
-            }
-          },
-          {
-            loader: "sass-loader",
-            options: {
-              sourceMap: true
-            }
-          }
-        ]
-      },
-      {
-        test: /\.(eot|woff|woff2|ttf)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/'
-          }
-        }
-      },
-      {
-        test: /\.(jpg|png)$/,
-        use: {
-          loader: "file-loader",
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'img/'
-          }
-        }
-      },
-      {
-        test: /\.svg$/,
-        use: {
-          loader: 'svg-sprite-loader',
-          options: {}
+      test: /\.js$/,
+      exclude: /node_modules/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['env']
         }
       }
+    },
+    {
+      test: /\.html$/,
+      //exclude: /index\.html$/, //without this HtmlWebPackPlugin will not work with template file correctly
+      include: path.join(__dirname, 'src/html'),
+      use: [{
+        loader: "html-loader",
+        options: {
+          minimize: true,
+          interpolate: true,
+          attrs: ['img:src', 'source:srcset']
+        }
+      }]
+    },
+    {
+      test: /\.scss$/,
+      use: [
+        MiniCssExtractPlugin.loader,
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1
+          }
+        },
+        {
+          loader: 'postcss-loader',
+          options: {
+            sourceMap: true,
+            ident: 'postcss',
+            plugins: () => [
+              postcssPresetEnv( /* options */)
+            ]
+          }
+        },
+        {
+          loader: "sass-loader",
+          options: {
+            sourceMap: true
+          }
+        }
+      ]
+    },
+    {
+      test: /\.(eot|woff|woff2|ttf)$/,
+      use: {
+        loader: "file-loader",
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'fonts/'
+        }
+      }
+    },
+    {
+      test: /\.(jpg|png)$/,
+      use: {
+        loader: "file-loader",
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'img/'
+        }
+      }
+    },
+    {
+      test: /\.svg$/,
+      use: {
+        loader: 'svg-sprite-loader',
+        options: {}
+      }
+    }
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
-      title: 'Title',
+      title: 'Index',
       template: "./src/html/index.html",
       filename: "./index.html"
+    }),
+    new HtmlWebPackPlugin({
+      title: 'Form',
+      template: "./src/html/form.html",
+      filename: "./form.html"
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",

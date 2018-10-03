@@ -1,0 +1,128 @@
+<form action="#" class="form section">
+    <div class="form__top">
+        <h2 class="form__header">
+            запись на стрижку
+        </h2>
+        <a href="/" class="button-link form__back-to-main-page invisible-on-mobile">
+            на главную
+        </a>
+    </div>
+    <div class="form__section form__name name">
+        <input type="text" placeholder="Фамилия" class="form__text-input name__input" required>
+        <input type="text" placeholder="Имя" class="form__text-input name__input" required>
+        <input type="text" placeholder="Отчество" class="form__text-input name__input">
+    </div>
+    <div class="form__section form__contacts contacts">
+        <input type="tel" placeholder="Контактный телефон" class="form__text-input contacts__input">
+        <input type="email" placeholder="Контактный e-mail" class="form__text-input contacts__input">
+    </div>
+    <textarea name="additional" cols="30" rows="10" placeholder="Доп. информация для мастера" class="form__textarea additional-information"></textarea>
+    <div class="form__section form__beard-choice beard-choice">
+        <h4 class="form__section-header">
+            Выберите модель бороды:
+        </h4>
+        <div class="beard-choice__content">
+            <div class="beard-choice__field">
+                <div class="beard-choice__radio-wrapper">
+                    <input type="radio" name="beard-type" class="beard-choice__radio" checked>
+                    <div class="beard-choice__radio-decor"></div>
+                </div>
+                <label for="" class="beard-choice__label">адмирал</label>
+                <svg class="beard-choice__svg">
+                    <use xlink:href="#beard-1"></use>
+                </svg>
+            </div>
+            <div class="beard-choice__field">
+                <div class="beard-choice__radio-wrapper">
+                    <input type="radio" name="beard-type" class="beard-choice__radio">
+                    <div class="beard-choice__radio-decor"></div>
+                </div>
+                <label for="" class="beard-choice__label">лесоруб</label>
+                <svg class="beard-choice__svg">
+                    <use xlink:href="#beard-2"></use>
+                </svg>
+            </div>
+            <div class="beard-choice__field">
+                <div class="beard-choice__radio-wrapper">
+                    <input type="radio" name="beard-type" class="beard-choice__radio">
+                    <div class="beard-choice__radio-decor"></div>
+                </div>
+                <label for="" class="beard-choice__label">полярник</label>
+                <svg class="beard-choice__svg">
+                    <use xlink:href="#beard-3"></use>
+                </svg>
+            </div>
+            <div class="beard-choice__field">
+                <div class="beard-choice__radio-wrapper">
+                    <input type="radio" name="beard-type" class="beard-choice__radio">
+                    <div class="beard-choice__radio-decor"></div>
+                </div>
+                <label for="" class="beard-choice__label">боярин</label>
+                <svg class="beard-choice__svg">
+                    <use xlink:href="#beard-4"></use>
+                </svg>
+            </div>
+            <div class="beard-choice__field">
+                <div class="beard-choice__radio-wrapper">
+                    <input type="radio" name="beard-type" class="beard-choice__radio">
+                    <div class="beard-choice__radio-decor"></div>
+                </div>
+                <label for="" class="beard-choice__label">мудрец</label>
+                <svg class="beard-choice__svg">
+                    <use xlink:href="#beard-5"></use>
+                </svg>
+            </div>
+
+        </div>
+    </div>
+    <div class="form__section form__additional-services additional-services">
+        <h4 class="form__section-header">
+            дополнительные услуги:
+        </h4>
+        <div class="additional-services__content">
+            <div class="additional-services__field">
+                <div class="additional-services__checkbox-wrapper">
+                    <input type="checkbox" name="services" id="" class="additional-services__checkbox" checked>
+                    <div class="additional-services__decor"></div>
+                </div>
+                <label for="" class="additional-services__label">Подкрасить бороду</label>
+            </div>
+            <div class="additional-services__field">
+                <div class="additional-services__checkbox-wrapper">
+                    <input type="checkbox" name="services" id="" class="additional-services__checkbox" checked>
+                    <div class="additional-services__decor"></div>
+                </div>
+                <label for="" class="additional-services__label">Накрутить усы</label>
+            </div>
+            <div class="additional-services__field">
+                <div class="additional-services__checkbox-wrapper">
+                    <input type="checkbox" name="services" id="" class="additional-services__checkbox">
+                    <div class="additional-services__decor"></div>
+                </div>
+                <label for="" class="additional-services__label">Причесать бороду</label>
+            </div>
+            <div class="additional-services__field">
+                <div class="additional-services__checkbox-wrapper">
+                    <input type="checkbox" name="services" id="" class="additional-services__checkbox">
+                    <div class="additional-services__decor"></div>
+                </div>
+                <label for="" class="additional-services__label">Подровнять виски</label>
+            </div>
+            <div class="additional-services__field">
+                <div class="additional-services__checkbox-wrapper">
+                    <input type="checkbox" name="services" id="" class="additional-services__checkbox">
+                    <div class="additional-services__decor"></div>
+                </div>
+                <label for="" class="additional-services__label">Убрать седину</label>
+            </div>
+            <div class="additional-services__field">
+                <div class="additional-services__checkbox-wrapper">
+                    <input type="checkbox" name="services" id="" class="additional-services__checkbox">
+                    <div class="additional-services__decor"></div>
+                </div>
+                <label for="" class="additional-services__label">Отполировать лысину</label>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="form__submit">отправить заявку</button>
+</form>
