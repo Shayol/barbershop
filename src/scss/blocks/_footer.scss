@@ -67,4 +67,21 @@
             padding-bottom: 0;
         }
     }
+    @media(min-width: $desktop) {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        &__social {
+            order: initial;
+            flex-basis: 33.33%;
+            margin: 0;
+        }
+        &__info {
+            flex-basis: 33.33%;
+        }
+        &__developed-by {
+            order: initial;
+            flex-basis: 16.66%;
+            margin-left: auto;
+        }
+    }
 }
