@@ -42,7 +42,6 @@
         font-weight: bold;
         color: white;
         line-height: $baseline;
-        display: inline-block;
     }
     &__month {
         font-size: 0.6 * $baseline;
@@ -103,6 +102,22 @@
         &__text {
             flex-basis: auto;
             padding-left: 21px;
+        }
+    }
+    @media(min-width: $desktop) {
+        padding-top: 2 * $baseline;
+        padding-bottom: 36px;
+        &__item {
+            flex-basis: 33.33%;
+            &\--third {
+                display: flex;
+            }
+        }
+        &__header {
+            padding-left: 70px;
+        }
+        &__show {
+            flex-basis: 16.66%;
         }
     }
 }

@@ -14,4 +14,14 @@
             margin-right: 0;
         }
     }
+    @media(min-width: $desktop) {
+        padding-top: 160px;
+        padding-bottom: 64px;
+        &__statistics {
+            position: absolute;
+            top: -160px;
+            left: 120px;
+            right: 120px;
+        }
+    }
 }

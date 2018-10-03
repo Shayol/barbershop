@@ -50,17 +50,17 @@
         flex-basis: 50%;
     }
     @media(min-width: $tablet) {
-        display: flex;
-        flex-wrap: wrap;
         position: relative;
         &__section {
             flex-direction: column;
             height: 160px;
             align-items: flex-start;
             flex-basis: 50%;
-            padding-left: 35px;
-            padding-top: $baseline;
-            padding-bottom: $baseline;
+            padding: $baseline 0 $baseline 35px;
+        }
+        &__sections-wrapper {
+            display: flex;
+            flex-wrap: wrap;
         }
         &__number {
             font-size: 72px; // padding-bottom: 14px;
@@ -107,6 +107,27 @@
         }
         &__lie {
             padding-left: 40px;
+            text-align: left;
+        }
+    }
+    @media(min-width: $desktop) {
+        display: flex;
+        &__text-block {
+            position: static;
+            height: 320px;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            width: 33.33%
+        }
+        &__header {
+            padding-bottom: 0;
+        }
+        &__text-block-text {
+            padding: 5px 0 0 42px;
+        }
+        &__sections-wrapper {
+            width: 66.66%;
         }
     }
 }
