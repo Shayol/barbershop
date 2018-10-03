@@ -94,4 +94,17 @@
             }
         }
     }
+    @media(min-width: $desktop) {
+        &__content {
+            position: absolute;
+            left: 70px;
+            width: calc(100% - 140px);
+        }
+        &__nav {
+            top: initial;
+            bottom: -52px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
 }
