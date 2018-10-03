@@ -1,0 +1,14 @@
+@mixin text-input {
+    border: 1px solid $border-grey;
+    padding-left: 18px;
+    width: 100%;
+    margin-bottom: 6px;
+    outline: none;
+    font-family: 'PT Sans Narrow';
+    font-weight: 400;
+    font-size: 18px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include input-placeholder;
+}

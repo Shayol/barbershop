@@ -1,0 +1,32 @@
+.additional-services {
+    &__checkbox-wrapper {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid $border-grey;
+        background-color: white;
+        position: relative;
+    }
+    &__checkbox {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        opacity: 0;
+        z-index: 3;
+    }
+    &__checkbox:checked~&__checkbox-decor {
+        display: block;
+    }
+    &__checkbox-decor {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid $border-grey;
+        background-color: white;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

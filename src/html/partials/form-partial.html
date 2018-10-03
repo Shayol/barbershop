@@ -16,7 +16,9 @@
         <input type="tel" placeholder="Контактный телефон" class="form__text-input contacts__input">
         <input type="email" placeholder="Контактный e-mail" class="form__text-input contacts__input">
     </div>
-    <textarea name="additional" cols="30" rows="10" placeholder="Доп. информация для мастера" class="form__textarea additional-information"></textarea>
+    <div class="form__section form__additional-information additional-information">
+        <textarea name="additional" cols="30" rows="10" placeholder="Доп. информация для мастера" class="form__textarea additional-information__textarea"></textarea>
+    </div>
     <div class="form__section form__beard-choice beard-choice">
         <h4 class="form__section-header">
             Выберите модель бороды:
@@ -28,7 +30,7 @@
                     <div class="beard-choice__radio-decor"></div>
                 </div>
                 <label for="" class="beard-choice__label">адмирал</label>
-                <svg class="beard-choice__svg">
+                <svg class="beard-choice__svg beard-choice__svg-1">
                     <use xlink:href="#beard-1"></use>
                 </svg>
             </div>
@@ -38,17 +40,17 @@
                     <div class="beard-choice__radio-decor"></div>
                 </div>
                 <label for="" class="beard-choice__label">лесоруб</label>
-                <svg class="beard-choice__svg">
+                <svg class="beard-choice__svg beard-choice__svg-2">
                     <use xlink:href="#beard-2"></use>
                 </svg>
             </div>
-            <div class="beard-choice__field">
+            <div class="beard-choice__field beard-choice__field--third">
                 <div class="beard-choice__radio-wrapper">
                     <input type="radio" name="beard-type" class="beard-choice__radio">
                     <div class="beard-choice__radio-decor"></div>
                 </div>
                 <label for="" class="beard-choice__label">полярник</label>
-                <svg class="beard-choice__svg">
+                <svg class="beard-choice__svg beard-choice__svg-3">
                     <use xlink:href="#beard-3"></use>
                 </svg>
             </div>
@@ -58,7 +60,7 @@
                     <div class="beard-choice__radio-decor"></div>
                 </div>
                 <label for="" class="beard-choice__label">боярин</label>
-                <svg class="beard-choice__svg">
+                <svg class="beard-choice__svg beard-choice__svg-4">
                     <use xlink:href="#beard-4"></use>
                 </svg>
             </div>
@@ -68,7 +70,7 @@
                     <div class="beard-choice__radio-decor"></div>
                 </div>
                 <label for="" class="beard-choice__label">мудрец</label>
-                <svg class="beard-choice__svg">
+                <svg class="beard-choice__svg beard-choice__svg-5">
                     <use xlink:href="#beard-5"></use>
                 </svg>
             </div>

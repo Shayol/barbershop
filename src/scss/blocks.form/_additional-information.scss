@@ -1,0 +1,7 @@
+.additional-information {
+    &__textarea {
+        height: 112px;
+        @include text-input;
+        padding-top: 14px;
+    }
+}

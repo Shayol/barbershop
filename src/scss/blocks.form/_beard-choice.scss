@@ -1,0 +1,74 @@
+.beard-choice {
+    &__content {
+        display: flex;
+        flex-wrap: wrap; // justify-content: space-around;
+        align-items: flex-start;
+    }
+    &__field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 33%;
+        &\--third {
+            padding-bottom: 32px;
+        }
+    }
+    &__label {
+        padding-bottom: 12px;
+        padding-top: 12px;
+        font-size: 18px;
+        font-weight: 400;
+        color: black;
+        line-height: 1.33;
+    }
+    &__svg-1 {
+        width: 52px;
+        height: 49px;
+    }
+    &__svg-2 {
+        width: 58px;
+        height: 68px;
+    }
+    &__svg-3 {
+        width: 64px;
+        height: 78px;
+    }
+    &__svg-4 {
+        width: 58px;
+        height: 98px;
+    }
+    &__svg-5 {
+        width: 46px;
+        height: 105px;
+    }
+    &__radio-wrapper {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid $border-grey;
+        background-color: white;
+        position: relative;
+    }
+    &__radio {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        opacity: 0;
+        z-index: 3;
+    }
+    &__radio:checked~&__radio-decor {
+        display: block;
+    }
+    &__radio-decor {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid $border-grey;
+        background-color: white;
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

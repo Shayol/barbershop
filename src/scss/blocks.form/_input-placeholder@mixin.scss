@@ -1,0 +1,9 @@
+@mixin input-placeholder {
+    &::placeholder {
+        font-size: 18px;
+        line-height: 1;
+        color: black;
+        font-family: 'PT Sans Narrow';
+        font-weight: 400;
+    }
+}

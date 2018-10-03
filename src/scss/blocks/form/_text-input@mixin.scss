@@ -1,9 +1,0 @@
-@mixin text-input-mixin {
-    height: 50px;
-    border: 1px solid $border-grey;
-    &::placeholder {
-        font-size: 18px;
-        line-height: 50px;
-        color: black;
-    }
-}

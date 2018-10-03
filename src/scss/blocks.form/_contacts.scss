@@ -1,0 +1,6 @@
+.contacts {
+    &__input {
+        height: 50px;
+        @include text-input;
+    }
+}
