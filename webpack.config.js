@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       test: /\.html$/,
-      //exclude: /index\.html$/, //without this HtmlWebPackPlugin will not work with template file correctly
+      //exclude: /photos-partial\.html$/, //without this the underscore template won't be executed.
       include: path.join(__dirname, 'src/html'),
       use: [{
         loader: "html-loader",
@@ -109,7 +109,10 @@ module.exports = {
     }),
     new HtmlWebPackPlugin({
       title: 'Photos',
-      template: "./src/html/photos.html",
+      template: "./src/html/photos.ejs",
+      templateParameters: {
+        'foo': 'bar'
+      },
       filename: "./photos.html"
     }),
     new MiniCssExtractPlugin({
