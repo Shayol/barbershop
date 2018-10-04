@@ -3,4 +3,20 @@
         height: 50px;
         @include text-input;
     }
+    @media(min-width: $tablet) {
+        display: flex;
+        &__input {
+            height: 70px;
+            flex-basis: 33.33%;
+        }
+        &__first-name {
+            order: 0;
+        }
+        &__last-name {
+            order: 1
+        }
+        &__paternal-name {
+            order: 2;
+        }
+    }
 }

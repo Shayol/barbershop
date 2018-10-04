@@ -11,4 +11,8 @@
         margin-bottom: 0;
     }
     @include input-placeholder;
+    @media(min-width: $tablet) {
+        padding-left: 26px;
+        margin-bottom: 0;
+    }
 }

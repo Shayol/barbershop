@@ -17,7 +17,7 @@
     &__beard-choice {
         margin-bottom: 44px;
     }
-    &__additional-infomation {
+    &__textarea {
         height: 112px;
     }
     &__additional-services {
@@ -31,8 +31,59 @@
         color: black;
         text-align: center;
         padding-bottom: 36px;
+        white-space: nowrap;
     }
     &__submit {
         width: 100%;
+    }
+    @media(min-width: $tablet) {
+        padding-top: 52px;
+        padding-bottom: 76px;
+        &__header {
+            text-align: left;
+            padding-bottom: 0;
+            font-size: 40px;
+        }
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 67px;
+        }
+        &__back-to-main-page {
+            flex-basis: 25%;
+        }
+        &__section {
+            margin-bottom: 35px;
+            position: relative;
+        }
+        &__additional-information {
+            margin-bottom: 64px;
+        }
+        &__textarea {
+            height: 212px;
+        }
+        &__section-header {
+            font-size: 30px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding-left: 25px;
+            padding-right: 25px;
+            background-color: $beige;
+            z-index: 1;
+            padding-bottom: 0;
+        }
+        &__additional-services {
+            padding-top: 84px;
+            margin-bottom: 60px;
+            border-top: 1px solid $border-grey;
+        }
+        &__beard-choice {
+            border-top: 1px solid $border-grey;
+            padding-top: 60px;
+            margin-bottom: 66px;
+        }
     }
 }

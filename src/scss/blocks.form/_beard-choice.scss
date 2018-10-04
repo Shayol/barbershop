@@ -1,7 +1,7 @@
 .beard-choice {
     &__content {
         display: flex;
-        flex-wrap: wrap; // justify-content: space-around;
+        flex-wrap: wrap;
         align-items: flex-start;
     }
     &__field {
@@ -70,5 +70,23 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    @media(min-width: $tablet) {
+        &__content {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+        &__field {
+            flex-basis: 15%;
+            &\--third {
+                padding-bottom: 0;
+            }
+        }
+        &__label {
+            font-size: 24px;
+            line-height: 1;
+            padding-top: 30px;
+            padding-bottom: 34px;
+        }
     }
 }

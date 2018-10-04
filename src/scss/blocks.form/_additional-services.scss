@@ -44,4 +44,28 @@
         transform: translateX(-50%) rotate(45deg);
         z-index: 1;
     }
+    @media(min-width: $tablet) {
+        &__content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &__label {
+            font-size: 24px;
+            line-height: 1;
+        }
+        &__field {
+            margin-bottom: 47px;
+            flex-basis: 50%;
+            &:nth-child(4),
+            &:nth-child(6) {
+                margin-bottom: 0;
+            }
+            &:nth-child(odd) {
+                order: 0;
+            }
+            &:nth-child(even) {
+                order: 1;
+            }
+        }
+    }
 }

@@ -3,4 +3,12 @@
         height: 50px;
         @include text-input;
     }
+    @media(min-width: $tablet) {
+        &__input {
+            height: 70px;
+            &:first-child {
+                margin-bottom: 35px;
+            }
+        }
+    }
 }
