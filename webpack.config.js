@@ -109,10 +109,7 @@ module.exports = {
     }),
     new HtmlWebPackPlugin({
       title: 'Photos',
-      template: "./src/html/photos.ejs",
-      templateParameters: {
-        'foo': 'bar'
-      },
+      template: "./src/html/photos.html",
       filename: "./photos.html"
     }),
     new MiniCssExtractPlugin({
