@@ -107,6 +107,11 @@ module.exports = {
       template: "./src/html/form.html",
       filename: "./form.html"
     }),
+    new HtmlWebPackPlugin({
+      title: 'Photos',
+      template: "./src/html/photos.html",
+      filename: "./photos.html"
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
     })
