@@ -1,1 +1,32 @@
-.top-text-block {}
+.top-text-block {
+    padding-top: 30px;
+    &__header {
+        font-size: 30px;
+        font-weight: bold;
+        color: black;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    @media(min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 67px;
+        padding-top: 52px;
+        &__header {
+            text-align: left;
+            padding-bottom: 0;
+            font-size: 40px;
+        }
+        &__link {
+            flex-basis: 25%;
+        }
+    }
+    @media(min-width: $desktop) {
+        &__link {
+            flex-basis: 16.66%;
+        }
+    }
+}

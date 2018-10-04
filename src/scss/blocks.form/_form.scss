@@ -1,16 +1,6 @@
 .form {
-    padding-top: 30px;
     padding-bottom: 74px;
     background-color: $beige;
-    &__header {
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-    line-height: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    padding-bottom: 30px;
-}
     &__section {
         margin-bottom: 32px;
     }
@@ -35,24 +25,10 @@
     }
     &__submit {
         width: 100%;
+        display: block;
     }
     @media(min-width: $tablet) {
-        padding-top: 52px;
         padding-bottom: 76px;
-        &__header {
-            text-align: left;
-            padding-bottom: 0;
-            font-size: 40px;
-        }
-        &__top {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 67px;
-        }
-        &__back-to-main-page {
-            flex-basis: 25%;
-        }
         &__section {
             margin-bottom: 35px;
             position: relative;
@@ -88,9 +64,6 @@
     }
     @media(min-width: $desktop) {
         padding-bottom: 87px;
-        &__back-to-main-page {
-            flex-basis: 16.66%;
-        }
         &__additional-information {
             margin-bottom: 82px;
         }
