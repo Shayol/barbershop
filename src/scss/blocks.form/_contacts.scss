@@ -6,9 +6,19 @@
     @media(min-width: $tablet) {
         &__input {
             height: 70px;
-            &:first-child {
-                margin-bottom: 35px;
-            }
+        }
+        &__tel {
+            margin-bottom: 35px;
+        }
+    }
+    @media(min-width: $desktop) {
+        display: flex;
+        &__tel {
+            margin-right: 36px;
+        }
+        &__input {
+            flex-grow: 1;
+            margin-bottom: 0;
         }
     }
 }

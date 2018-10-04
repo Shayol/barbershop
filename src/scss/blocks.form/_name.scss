@@ -19,4 +19,16 @@
             order: 2;
         }
     }
+    @media(min-width: $tablet) {
+        &__input {
+            flex-basis: auto;
+            flex-grow: 1;
+        }
+        &__first-name {
+            margin-right: 36px;
+        }
+        &__last-name {
+            margin-right: 36px;
+        }
+    }
 }
