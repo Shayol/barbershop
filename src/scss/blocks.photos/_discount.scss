@@ -14,4 +14,21 @@
         line-height: 27px;
         margin-left: 12.5%;
     }
+    @media(min-width: $tablet) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 4.2%;
+        &__clock {
+            width: 72px;
+            height: 72px;
+        }
+        &__text {
+            font-size: 30px;
+            margin-left: 14%;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
 }

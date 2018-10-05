@@ -42,6 +42,7 @@
     }
     @media(min-width: $tablet) {
         padding-top: 50px;
+        padding-bottom: 56px;
         &__header {
             font-size: 40px;
             line-height: 30px;
@@ -49,6 +50,7 @@
         }
         &__table {
             margin-top: 53px;
+            margin-bottom: 9px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         &__row {
