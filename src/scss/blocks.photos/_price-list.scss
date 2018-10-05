@@ -1,0 +1,43 @@
+.price-list {
+    background-color: map-get($grey-colors, dark-grey);
+    color: white;
+    padding-top: 35px;
+    &__table {
+        margin-top: 24px;
+    }
+    &__row {
+        display: flex;
+        width: 100%;
+        height: 69px;
+    }
+    &__col-on-mobile {
+        flex-basis: 75%;
+        justify-content: flex-start;
+    }
+    &__number {
+        display: none;
+    }
+    &__price {
+        flex-basis: 25%;
+        font-size: 20px;
+        line-height: 27px;
+        white-space: nowrap;
+        text-align: right;
+    }
+    &__service {
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: bold;
+    }
+    &__details {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    &__header {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
