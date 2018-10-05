@@ -14,7 +14,6 @@
     }
     &__col-on-mobile {
         flex-basis: 75%;
-        justify-content: flex-start;
     }
     &__number {
         display: none;
@@ -41,5 +40,24 @@
         line-height: 30px;
         text-transform: uppercase;
         text-align: center;
+    }
+    @media(min-width: $tablet) {
+        padding-top: 50px;
+        &__header {
+            font-size: 40px;
+            line-height: 30px;
+            text-align: left;
+        }
+        &__number {
+            display: initial;
+            flex-basis: 11.25%;
+        }
+        &__col-on-mobile {
+            flex-basis: 63.75%;
+            display: flex;
+        }
+        &__price {
+            flex-basis: 25%;
+        }
     }
 }

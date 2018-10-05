@@ -1,9 +1,12 @@
 .photo {
     position: relative;
     &\--work-of-the-month {
+        .photo__img {
+            height: 480px;
+        }
         &::before {
             content: "работа месяца";
-            text-align: right;
+            text-align: center;
             text-transform: uppercase;
             font-size: 20px;
             line-height: 50px;
@@ -16,7 +19,6 @@
             z-index: 1;
             left: 0;
             top: 400px;
-            padding-right: 14px;
         }
         &::after {
             width: 14px;
@@ -44,7 +46,6 @@
     }
     &__img-1 {
         background-image: url("../img/photo-1-desktop.png");
-        height: 480px;
     }
     &__img-2 {
         background-image: url("../img/photo-2-desktop.png");
@@ -76,5 +77,41 @@
     }
     &__text {
         padding-bottom: 18px;
+    }
+    @media(min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        &\--work-of-the-month {
+            &::before {
+                top: 35px;
+            }
+            &::after {
+                top: 35px;
+            }
+            .photo__info {
+                padding-top: 43px;
+                padding-bottom: 36px;
+            }
+        }
+        &__img {
+            width: 270px;
+            height: 294px;
+            flex-shrink: 0;
+        }
+        &__info {
+            flex-grow: 1;
+            padding-left: calc(50% - 270px);
+            padding-top: 43px;
+            padding-bottom: 38px;
+            padding-right: 8.6%;
+            border-left: 0;
+            border-top: 1px solid $border-grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__name {
+            padding-bottom: 26px;
+        }
     }
 }
