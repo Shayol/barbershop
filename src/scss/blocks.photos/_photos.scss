@@ -1,1 +1,6 @@
-.photos {}
+.photos {
+    padding-bottom: 48px;
+    &__item {
+        margin-bottom: 20px;
+    }
+}

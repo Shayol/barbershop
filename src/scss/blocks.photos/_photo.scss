@@ -1,4 +1,41 @@
 .photo {
+    position: relative;
+    &\--work-of-the-month {
+        &::before {
+            content: "работа месяца";
+            text-align: right;
+            text-transform: uppercase;
+            font-size: 20px;
+            line-height: 50px;
+            font-weight: bold;
+            color: white;
+            position: absolute;
+            height: 50px;
+            width: 162px;
+            background-color: $light-brown;
+            z-index: 1;
+            left: 0;
+            top: 400px;
+            padding-right: 14px;
+        }
+        &::after {
+            width: 14px;
+            height: 50px;
+            content: "";
+            position: absolute;
+            top: 400px;
+            left: 162px;
+            border-right: 7px solid $light-brown;
+            border-top: 25px solid $light-brown;
+            border-bottom: 25px solid $light-brown;
+            border-right: 7px solid transparent;
+            z-index: 2;
+        }
+        .photo__info {
+            padding-bottom: 18px;
+            padding-top: 20px;
+        }
+    }
     &__img {
         background-repeat: no-repeat;
         background-position: 100% 0%;
@@ -12,17 +49,24 @@
     &__img-2 {
         background-image: url("../img/photo-2-desktop.png");
     }
-    &__img-3 {}
-    &__img-4 {}
+    &__img-3 {
+        background-image: url("../img/photo-3-desktop.png");
+    }
+    &__img-4 {
+        background-image: url("../img/photo-4-desktop.png");
+    }
     &__info {
-        padding: 23px 26px 23px 30px;
+        padding: 23px 23px 28px 23px;
+        border-left: 1px solid $border-grey;
+        border-right: 1px solid $border-grey;
+        border-bottom: 1px solid $border-grey;
     }
     &__name {
         font-size: 24px;
-        font-weight: 400;
+        font-weight: bold;
         line-height: 27px;
         color: black;
-        padding-bottom: 18px;
+        padding-bottom: 12px;
     }
     &__review {
         font-size: 18px;

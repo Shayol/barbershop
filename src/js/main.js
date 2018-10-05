@@ -1,22 +1,30 @@
 import "../scss/main.scss";
 
-import logotypeMob from '../icons/logotype-mobile.svg';
-import menuIcon from '../icons/menu-icon.svg';
-import menuClose from '../icons/menu-close.svg';
-import advant1 from '../icons/advantage-1-illustration.svg';
-import advant2 from '../icons/advantage-2-illustration.svg';
-import advant3 from '../icons/advantage-3-illustration.svg';
-import featuresTriangle from '../icons/triangle-bottom.svg';
-import insta from '../icons/instagram.svg';
-import facebook from '../icons/facebook.svg';
-import vk from '../icons/vk.svg';
-import logotypeDesk from '../icons/logotype-desktop.svg';
-import logotypeTabl from '../icons/logotype-tablet.svg';
-import beard1 from '../icons/beard-1.svg';
-import beard2 from '../icons/beard-2.svg';
-import beard3 from '../icons/beard-3.svg';
-import beard4 from '../icons/beard-4.svg';
-import beard5 from '../icons/beard-5.svg';
+function importAll(r) {
+    let icons = {};
+    r.keys().map((item, index) => { icons[item.replace('./', '')] = r(item); });
+    return icons;
+}
+
+const images = importAll(require.context('../icons', false, /\.svg$/));
+
+// import logotypeMob from '../icons/logotype-mobile.svg';
+// import menuIcon from '../icons/menu-icon.svg';
+// import menuClose from '../icons/menu-close.svg';
+// import advant1 from '../icons/advantage-1-illustration.svg';
+// import advant2 from '../icons/advantage-2-illustration.svg';
+// import advant3 from '../icons/advantage-3-illustration.svg';
+// import featuresTriangle from '../icons/triangle-bottom.svg';
+// import insta from '../icons/instagram.svg';
+// import facebook from '../icons/facebook.svg';
+// import vk from '../icons/vk.svg';
+// import logotypeDesk from '../icons/logotype-desktop.svg';
+// import logotypeTabl from '../icons/logotype-tablet.svg';
+// import beard1 from '../icons/beard-1.svg';
+// import beard2 from '../icons/beard-2.svg';
+// import beard3 from '../icons/beard-3.svg';
+// import beard4 from '../icons/beard-4.svg';
+// import beard5 from '../icons/beard-5.svg';
 
 
 
