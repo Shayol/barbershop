@@ -1,0 +1,17 @@
+.discount {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    padding-left: 7.5%;
+    &__clock {
+        width: 58px;
+        height: 58px;
+    }
+    &__text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 27px;
+        margin-left: 12.5%;
+    }
+}

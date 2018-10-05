@@ -2,8 +2,10 @@
     background-color: map-get($grey-colors, dark-grey);
     color: white;
     padding-top: 35px;
+    padding-bottom: 52px;
     &__table {
         margin-top: 24px;
+        margin-bottom: 12px;
     }
     &__row {
         display: flex;
