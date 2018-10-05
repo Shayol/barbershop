@@ -12,9 +12,6 @@
         width: 100%;
         height: 69px;
     }
-    &__col-on-mobile {
-        flex-basis: 75%;
-    }
     &__number {
         display: none;
     }
@@ -29,10 +26,12 @@
         font-size: 20px;
         line-height: 27px;
         font-weight: bold;
+        flex-basis: 75%;
     }
-    &__details {
+    &__details-mobile {
         font-size: 20px;
         line-height: 27px;
+        font-weight: 400;
     }
     &__header {
         font-size: 30px;
@@ -48,16 +47,45 @@
             line-height: 30px;
             text-align: left;
         }
+        &__table {
+            margin-top: 53px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        &__row {
+            height: 55px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 1px solid rgba(255, 255, 255, 0.1);
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
         &__number {
             display: initial;
             flex-basis: 11.25%;
-        }
-        &__col-on-mobile {
-            flex-basis: 63.75%;
             display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
         }
         &__price {
             flex-basis: 25%;
+            padding-left: 21px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+        &__details {
+            display: initial;
+            flex-basis: 25%;
+            padding-left: 21px;
+            display: flex;
+            align-items: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        &__service {
+            padding-left: 21px;
+            flex-basis: 38.75%;
+            display: flex;
+            align-items: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
         }
     }
 }
