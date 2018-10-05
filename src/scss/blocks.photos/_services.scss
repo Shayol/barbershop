@@ -1,0 +1,7 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        flex-basis: 50%;
+    }
+}
