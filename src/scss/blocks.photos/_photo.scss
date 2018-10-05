@@ -27,7 +27,7 @@
             position: absolute;
             top: 400px;
             left: 162px;
-            border-right: 7px solid $light-brown;
+            border-left: 7px solid $light-brown;
             border-top: 25px solid $light-brown;
             border-bottom: 25px solid $light-brown;
             border-right: 7px solid transparent;
@@ -112,6 +112,31 @@
         }
         &__name {
             padding-bottom: 26px;
+        }
+    }
+    @media(min-width: $desktop) {
+        &\--work-of-the-month {
+            &::before {
+                top: 26px;
+                left: initial;
+                right: 0;
+            }
+            &::after {
+                top: 26px;
+                left: initial;
+                right: 162px;
+                border-left: 7px solid transparent;
+                border-right: 7px solid $light-brown;
+            }
+            .photo__img {
+                width: 50%;
+                max-width: 480px;
+            }
+            .photo__info {
+                padding-left: 40px;
+                padding-top: 13.5%;
+                padding-right: 12%;
+            }
         }
     }
 }

@@ -1,16 +1,25 @@
 .photos {
     padding-bottom: 48px;
+    max-width: 334px;
+    margin-left: auto;
+    margin-right: auto;
     &__item {
         margin-bottom: 20px;
     }
     @media(min-width: $tablet) {
         padding-bottom: 64px;
+        max-width: initial;
         &__top {
             margin-bottom: 38px;
         }
         &__item {
             width: 100%;
             margin-bottom: 40px;
+        }
+    }
+    @media(min-width: $desktop) {
+        &__top {
+            margin-bottom: 80px;
         }
     }
 }
