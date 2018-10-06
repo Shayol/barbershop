@@ -1,6 +1,15 @@
 .info {
     background-color: $brown;
     position: relative;
+    &::after {
+        content: url("../background-icons/triangle.svg");
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        width: 100%;
+    }
     &__lie {
         padding-top: 16px;
     }
@@ -9,6 +18,11 @@
         margin-right: -20px;
     }
     @media(min-width: $tablet) {
+        &::after {
+            content: url("../background-icons/triangle-tablet.svg");
+            width: 1280px;
+            bottom: -2.5px;
+        }
         &__statistics {
             margin-left: 0;
             margin-right: 0;

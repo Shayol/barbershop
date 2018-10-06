@@ -8,24 +8,6 @@ function importAll(r) {
 
 const images = importAll(require.context('../icons', false, /\.svg$/));
 
-// import logotypeMob from '../icons/logotype-mobile.svg';
-// import menuIcon from '../icons/menu-icon.svg';
-// import menuClose from '../icons/menu-close.svg';
-// import advant1 from '../icons/advantage-1-illustration.svg';
-// import advant2 from '../icons/advantage-2-illustration.svg';
-// import advant3 from '../icons/advantage-3-illustration.svg';
-// import featuresTriangle from '../icons/triangle-bottom.svg';
-// import insta from '../icons/instagram.svg';
-// import facebook from '../icons/facebook.svg';
-// import vk from '../icons/vk.svg';
-// import logotypeDesk from '../icons/logotype-desktop.svg';
-// import logotypeTabl from '../icons/logotype-tablet.svg';
-// import beard1 from '../icons/beard-1.svg';
-// import beard2 from '../icons/beard-2.svg';
-// import beard3 from '../icons/beard-3.svg';
-// import beard4 from '../icons/beard-4.svg';
-// import beard5 from '../icons/beard-5.svg';
-
 
 
 
@@ -35,6 +17,13 @@ window.addEventListener("load", function () {
 
         let close = document.querySelector(".js-menu-close");
 
+        let openLogin = document.querySelector(".js-show-login-mobile");
+
+        function closeMenu() {
+            open.classList.add("js-nav--closed");
+            open.classList.remove("js-nav--opened");
+        }
+
         if (open && close) {
             open.addEventListener('click', function () {
                 if (open.className.indexOf("js-nav--closed") != -1) {
@@ -42,12 +31,20 @@ window.addEventListener("load", function () {
                     open.classList.add("js-nav--opened");
                 }
             });
-            close.addEventListener('click', function (e) {
-                open.classList.add("js-nav--closed");
-                open.classList.remove("js-nav--opened");
+            close.addEventListener('click', function () {
+                closeMenu();
                 event.stopPropagation();
             });
+
+            if (openLogin) {
+                openLogin.addEventListener('click', function () {
+                    closeMenu();
+                    event.stopPropagation();
+                });
+            }
         }
+
+
     }
 
     (function setActiveLocation() {
@@ -65,5 +62,27 @@ window.addEventListener("load", function () {
 
     })();
 
+    function login() {
+        let mobOpen = document.querySelector(".js-show-login-mobile");
+        let menuOpen = document.querySelector(".js-show-login");
+        let el = document.querySelector(".js-login");
+
+        if (mobOpen && menuOpen && el) {
+            [mobOpen, menuOpen].forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    el.style.display = "initial";
+                    e.preventDefault();
+                });
+            });
+            el.addEventListener('click', function (e) {
+                if (e.target.classList.contains("js-login-close")) {
+                    el.style.display = "none";
+                    e.preventDefault();
+                }
+            });
+        }
+    }
+
     mobileMenu();
+    login();
 });

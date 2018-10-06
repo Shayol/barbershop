@@ -78,7 +78,7 @@ module.exports = {
       }
     },
     {
-      test: /\.(jpg|png)$/,
+      test: /(img|background-icons).*\.(jpg|png|svg)$/,
       use: {
         loader: "file-loader",
         options: {
@@ -89,6 +89,7 @@ module.exports = {
     },
     {
       test: /\.svg$/,
+      exclude: /background-icons/,
       use: {
         loader: 'svg-sprite-loader',
         options: {}

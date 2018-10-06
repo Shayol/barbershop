@@ -17,6 +17,20 @@
     &__top-menu {
         height: 72px;
     }
+    @media(min-width: $tablet) {
+        &\--small {
+            position: relative;
+            &::after {
+                content: url("../background-icons/triangle.svg");
+                fill: $beige;
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                right: 0;
+                z-index: 1;
+            }
+        }
+    }
     @media(min-width: $desktop) {
         background-image: url("../img/back-desktop.jpg");
         &__logo {

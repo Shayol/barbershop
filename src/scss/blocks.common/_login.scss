@@ -4,6 +4,7 @@
     left: 0;
     right: 0;
     z-index: 20;
+    display: none;
     &__body {
         width: 100%;
         min-height: 408px;
@@ -40,19 +41,27 @@
     }
     &__field {
         position: relative;
+        &:after {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 19px;
+        }
         &\--login {
             margin-bottom: 6px;
             &:after {
-                position: absolute; // content: url("../../icons/user-icon.svg");
-                top: 50%;
-                transform: translateY(-50%);
-                right: 19px;
+                content: url("../background-icons/user-icon.svg");
                 height: 15px;
                 width: 15px;
             }
         }
         &\--email {
             margin-bottom: 26px;
+            &:after {
+                content: url("../background-icons/lock-icon.svg");
+                width: 15px;
+                height: 17px;
+            }
         }
     }
     &__input {
