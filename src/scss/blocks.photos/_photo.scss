@@ -115,6 +115,18 @@
         }
     }
     @media(min-width: $desktop) {
+        &\--small {
+            display: initial;
+            .photo__img {
+                width: 100%;
+                max-width: 294px;
+            }
+            .photo__info {
+                padding: 30px 30px 32px 36px;
+                border-left: 1px solid $border-grey;
+                height: 247px;
+            }
+        }
         &\--work-of-the-month {
             &::before {
                 top: 26px;
@@ -136,6 +148,7 @@
                 padding-left: 40px;
                 padding-top: 13.5%;
                 padding-right: 12%;
+                padding-bottom: 24px;
             }
         }
     }

@@ -14,7 +14,7 @@
         line-height: 27px;
         margin-left: 12.5%;
     }
-    @media(min-width: $tablet) {
+    @media(min-width: $tablet) and (max-width: $desktop - 1px) {
         padding-top: 20px;
         padding-bottom: 20px;
         padding-left: 4.2%;
@@ -29,6 +29,22 @@
             align-items: center;
             text-transform: uppercase;
             font-weight: bold;
+        }
+    }
+    @media(min-width: $desktop) {
+        padding: 35px 0 0 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        &__clock {
+            width: 142px;
+            height: 142px;
+            margin-bottom: 26px;
+        }
+        &__text {
+            margin-left: 0;
+            display: initial;
+            text-align: center;
         }
     }
 }

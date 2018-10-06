@@ -18,8 +18,18 @@
         }
     }
     @media(min-width: $desktop) {
+        padding-bottom: 88px;
         &__top {
             margin-bottom: 80px;
+        }
+        &__container {
+            display: flex;
+            justify-content: space-between;
+        }
+        &__item\--small {
+            width: 31%;
+            max-width: 294px;
+            margin-bottom: 0;
         }
     }
 }
