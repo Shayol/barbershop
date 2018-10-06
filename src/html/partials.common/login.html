@@ -1,4 +1,4 @@
-<div class="login">
+<form action="#" class="login" novalidate>
     <svg class="login__close">
         <use xlink:href="#menu-close"></use>
     </svg>
@@ -10,10 +10,10 @@
             Введите свой логин и пароль, чтобы войти
         </p>
         <div class="login__field login__field--login">
-            <input type="text" name="Логин" placeholder="login" class="login__input">
+            <input type="text" name="login" placeholder="Логин" class="login__input" required>
         </div>
         <div class="login__field login__field--email">
-            <input type="email" name="Пароль" placeholder="password" class="login__input">
+            <input type="email" name="password" placeholder="Пароль" class="login__input" required>
         </div>
         <div class="login__section">
             <div class="login__remember-wrapper">
@@ -31,11 +31,11 @@
         </div>
         <div class="login__button-row">
             <button type="submit" class="login__submit login__button">
-                войти
+                войти <span class="invisible-on-mobile">в личный кабинет</span>
             </button>
             <button class="login__button login__button-close">
                 закрыть
             </button>
         </div>
     </div>
-</div>
+</form>
