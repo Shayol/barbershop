@@ -3,12 +3,12 @@
     position: relative;
     &::after {
         content: url("../background-icons/triangle.svg");
-        position: absolute;
         bottom: -3px;
+        position: absolute;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
-        width: 100%;
+        width: 100vw;
     }
     &__lie {
         padding-top: 16px;
@@ -19,9 +19,8 @@
     }
     @media(min-width: $tablet) {
         &::after {
-            content: url("../background-icons/triangle-tablet.svg");
             width: 1280px;
-            bottom: -2.5px;
+            content: url("../background-icons/triangle-tablet.svg");
         }
         &__statistics {
             margin-left: 0;

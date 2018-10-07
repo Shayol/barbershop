@@ -83,6 +83,56 @@ window.addEventListener("load", function () {
         }
     }
 
+    let popups = {
+        popups: document.querySelectorAll(".js-popup"),
+        success: document.querySelector(".js-popup--success"),
+        failure: document.querySelector(".js-popup--failure"),
+        addListeners() {
+            this.popups.forEach(popup => {
+                popup.addEventListener('click', e => {
+                    if (!e.target.classList.contains("js-popup-body")) {
+                        popup.style.display = "none";
+                    }
+                })
+            })
+        },
+        showSuccess() {
+            this.success.style.display = "flex";
+        },
+        showFailure() {
+            this.failure.style.display = "flex";
+        }
+    };
+
+    let form = {
+        el: document.querySelector('.js-form'),
+        addListeners() {
+            if (this.el) {
+                this.el.addEventListener('submit', e => {
+                    console.log(this.el.elements);
+                    let fieldsWithErrors = Array.prototype.filter.call(this.el.elements, formEl => {
+                        if (!formEl.validity.valid) {
+                            formEl.classList.add("invalid");
+                            return true;
+                        }
+                        return false;
+                    });
+
+                    if (fieldsWithErrors.length > 0) {
+                        e.preventDefault();
+                        popups.showFailure();
+                    }
+                    else {
+                        e.preventDefault(); //to see popup and not actually sibmit form
+                        popups.showSuccess();
+                    }
+                });
+            }
+        }
+    };
+
     mobileMenu();
     login();
+    popups.addListeners();
+    form.addListeners();
 });
