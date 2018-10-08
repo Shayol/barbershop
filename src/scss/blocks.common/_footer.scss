@@ -8,8 +8,8 @@
     position: relative;
     &::after {
         content: url("../background-icons/triangle-footer.svg");
-        height: 34px;
-        bottom: 100%;
+        height: auto;
+        bottom: 99.3%;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
