@@ -52,7 +52,7 @@ window.addEventListener("load", function () {
         let currentHref = window.location.href;
 
         if (links.length > 0) {
-            links.forEach(function (item) {
+            Array.prototype.forEach.call(links, function (item) {
                 if (currentHref == item.querySelector("a").href) {
                     item.classList.add("top-menu__item--active");
                 }
@@ -68,9 +68,9 @@ window.addEventListener("load", function () {
         let el = document.querySelector(".js-login");
 
         if (mobOpen && menuOpen && el) {
-            [mobOpen, menuOpen].forEach(function (link) {
+            Array.prototype.forEach.call([mobOpen, menuOpen], function (link) {
                 link.addEventListener('click', function (e) {
-                    el.style.display = "initial";
+                    el.style.display = "block";
                     e.preventDefault();
                 });
             });
@@ -87,8 +87,8 @@ window.addEventListener("load", function () {
         popups: document.querySelectorAll(".js-popup"),
         success: document.querySelector(".js-popup--success"),
         failure: document.querySelector(".js-popup--failure"),
-        addListeners() {
-            this.popups.forEach(popup => {
+        addListeners: function () {
+            Array.prototype.forEach.call(this.popups, function (popup) {
                 popup.addEventListener('click', e => {
                     if (!e.target.classList.contains("js-popup-body")) {
                         popup.style.display = "none";
@@ -96,10 +96,10 @@ window.addEventListener("load", function () {
                 })
             })
         },
-        showSuccess() {
+        showSuccess: function () {
             this.success.style.display = "flex";
         },
-        showFailure() {
+        showFailure: function () {
             this.failure.style.display = "flex";
         }
     };

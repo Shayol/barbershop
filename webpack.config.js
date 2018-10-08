@@ -55,7 +55,7 @@ module.exports = {
             sourceMap: true,
             ident: 'postcss',
             plugins: () => [
-              postcssPresetEnv( /* options */)
+              require("autoprefixer")()
             ]
           }
         },
