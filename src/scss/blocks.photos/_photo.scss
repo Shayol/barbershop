@@ -116,7 +116,7 @@
     }
     @media(min-width: $desktop) {
         &\--small {
-            display: initial;
+            display: block;
             .photo__img {
                 width: 100%;
                 max-width: 294px;
@@ -130,12 +130,12 @@
         &\--work-of-the-month {
             &::before {
                 top: 26px;
-                left: initial;
+                left: auto;
                 right: 0;
             }
             &::after {
                 top: 26px;
-                left: initial;
+                left: auto;
                 right: 162px;
                 border-left: 7px solid transparent;
                 border-right: 7px solid $light-brown;

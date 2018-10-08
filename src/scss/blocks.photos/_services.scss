@@ -44,7 +44,7 @@
     @media(min-width: $desktop) {
         flex-wrap: nowrap;
         &__item {
-            flex-basis: initial;
+            flex-basis: auto;
             flex-grow: 1;
         }
         &__scissors {

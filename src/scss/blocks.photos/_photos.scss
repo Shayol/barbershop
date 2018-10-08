@@ -9,7 +9,7 @@
     }
     @media(min-width: $tablet) {
         padding-bottom: 64px;
-        max-width: initial;
+        max-width: none;
         &__top {
             margin-bottom: 38px;
         }

@@ -85,7 +85,7 @@
         flex-wrap: nowrap;
         align-items: flex-start;
         &__social {
-            order: initial;
+            order: 0;
             flex-basis: 33.33%;
             margin: 0;
         }
@@ -93,7 +93,7 @@
             flex-basis: 33.33%;
         }
         &__developed-by {
-            order: initial;
+            order: 0;
             flex-basis: 16.66%;
             margin-left: auto;
         }
