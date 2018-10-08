@@ -19,14 +19,17 @@
     &__instagram-svg {
         width: 36px;
         height: 36px;
+        fill: #fff;
     }
     &__facebook-svg {
         width: 18px;
         height: 39px;
+        fill: #fff;
     }
     &__vk-svg {
         width: 23px;
         height: 26px;
+        fill: #fff;
     }
     @media(min-width: $tablet) {
         &__icons-wrapper {

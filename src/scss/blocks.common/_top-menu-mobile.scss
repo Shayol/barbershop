@@ -1,7 +1,6 @@
 .top-menu-mobile {
     background-color: $light-brown;
     position: relative;
-
     &__text {
         font-size: 0.66 * $baseline;
         text-transform: uppercase;
@@ -10,7 +9,6 @@
         text-align: center;
         font-weight: 400;
     }
-
     &__icon-wrapper {
         width: 70px;
         height: 100%;
@@ -22,10 +20,10 @@
         justify-content: center;
         align-items: center;
     }
-
     &__menu-icon {
         width: 36px;
         height: 29px;
+        fill: #fff;
     }
     &__close {
         width: 70px;
@@ -35,12 +33,11 @@
         justify-content: center;
         align-items: center;
     }
-
     &__menu-close {
         width: 26px;
         height: 25px;
+        fill: #fff;
     }
-
     &__list-wrapper {
         position: absolute;
         top: 0;
@@ -49,7 +46,6 @@
         align-items: flex-top;
         z-index: 2;
     }
-
     &__menu-list {
         flex-grow: 1;
     }

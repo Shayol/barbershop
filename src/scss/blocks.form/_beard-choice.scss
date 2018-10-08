@@ -21,6 +21,9 @@
         color: black;
         line-height: 1.33;
     }
+    &__svg {
+        fill: $light-brown;
+    }
     &__svg-1 {
         width: 52px;
         height: 49px;

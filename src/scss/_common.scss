@@ -28,7 +28,6 @@ body {
 }
 
 $baseline: 27px;
-
 $brown: #242424;
 $light-brown: #826550;
 $menu-button-brown: #6a4d38;
@@ -36,13 +35,8 @@ $beige: #f8f5f2;
 $border-grey: #e5ddd5;
 $footer-color: #292929;
 $footer-border-color: #3f3f3f;
-
-$grey-colors: (
-    medium-grey: #404040,
-    light-grey: #4e4e4e,
-    dark-grey: #353535
-);
-
-
+$grey-colors: ( medium-grey: #404040,
+light-grey: #4e4e4e,
+dark-grey: #353535);
 $tablet: 768px;
 $desktop: 1200px;

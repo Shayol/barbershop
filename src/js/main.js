@@ -1,4 +1,5 @@
 import "../scss/main.scss";
+import svg4everybody from "svg4everybody";
 
 function importAll(r) {
     let icons = {};
@@ -12,6 +13,7 @@ const images = importAll(require.context('../icons', false, /\.svg$/));
 
 
 window.addEventListener("load", function () {
+    svg4everybody();
     function mobileMenu() {
         let open = document.querySelector(".js-nav");
 
