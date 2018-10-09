@@ -1,8 +1,8 @@
 .slider {
-    &--features .js-active-slide {
+    &\--features &__nav-item\--active {
         background-color: white;
     }
-    &--review .js-active-slide {
+    &\--review &__nav-item\--active {
         background-color: #353535;
     }
     &__content {
