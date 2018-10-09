@@ -49,6 +49,10 @@
         text-align: right;
         flex-basis: 50%;
     }
+    &__star {
+        transform: scale(0.5) translate(-50%, -50%);
+        display: inline-block;
+    }
     @media(min-width: $tablet) {
         position: relative;
         &__section {
