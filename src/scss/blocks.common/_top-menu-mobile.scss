@@ -1,3 +1,12 @@
+@mixin hover-active {
+    &:hover {
+        background-color: $menu-icons-hover-brown;
+    }
+    &:active {
+        background-color: $menu-icons-hover-brown;
+    }
+}
+
 .top-menu-mobile {
     background-color: $light-brown;
     position: relative;
@@ -19,11 +28,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include hover-active;
     }
     &__menu-icon {
         width: 36px;
         height: 29px;
         fill: #fff;
+        &:active {
+            opacity: 0.3;
+        }
     }
     &__close {
         width: 70px;
@@ -32,11 +45,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include hover-active;
     }
     &__menu-close {
         width: 26px;
         height: 25px;
         fill: #fff;
+        &:active {
+            opacity: 0.3;
+        }
     }
     &__list-wrapper {
         position: absolute;

@@ -20,6 +20,7 @@
         border: 1px solid $border-grey;
         background-color: white;
         position: relative;
+        @include inputs-hover-mixin;
     }
     &__checkbox {
         width: 36px;

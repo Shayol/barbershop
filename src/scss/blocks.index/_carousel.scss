@@ -69,10 +69,10 @@
                 ~.carousel__content .carousel__next-item {
                     display: none;
                 }
-                ~.carousel__content .carousel__nav-item {
+                ~.carousel__nav .carousel__nav-item {
                     background-color: transparent;
                 }
-                ~.carousel__content .carousel__nav-item:nth-child(#{$i}) {
+                ~.carousel__nav .carousel__nav-item:nth-child(#{$i}) {
                     background-color: #353535;
                 }
                 ~.carousel__content>.carousel__item:nth-child(#{$i}) {

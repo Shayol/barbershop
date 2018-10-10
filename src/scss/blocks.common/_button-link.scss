@@ -12,4 +12,5 @@
     font-family: 'PT Sans Narrow';
     text-decoration: none;
     text-align: center;
+    @include inputs-hover-mixin;
 }

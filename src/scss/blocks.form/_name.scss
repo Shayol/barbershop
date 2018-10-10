@@ -2,6 +2,12 @@
     &__input {
         height: 50px;
         @include text-input;
+        &:hover {
+            border-color: $inputs-hover-color;
+        }
+        &:active {
+            border: 1px solid #999999;
+        }
     }
     @media(min-width: $tablet) {
         display: flex;

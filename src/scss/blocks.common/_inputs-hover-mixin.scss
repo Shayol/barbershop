@@ -1,0 +1,8 @@
+@mixin inputs-hover-mixin {
+    &:hover {
+        border-color: $inputs-hover-color;
+    }
+    &:active {
+        background-color: $inputs-hover-color;
+    }
+}

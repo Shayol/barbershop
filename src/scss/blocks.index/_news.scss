@@ -35,6 +35,22 @@
             left: 0;
             box-sizing: border-box;
         }
+        &:hover {
+            background-color: $light-brown;
+            &::after {
+                border-top-color: $light-brown;
+            }
+        }
+        &:active {
+            background-color: $menu-button-brown;
+            &::after {
+                border-top-color: $menu-button-brown;
+            }
+            .news__day,
+            .news__month {
+                opacity: 0.3;
+            }
+        }
     }
     &__day {
         font-size: 1.1 * $baseline;
@@ -61,6 +77,16 @@
         font-size: 0.66 * $baseline;
         line-height: $baseline;
         flex-basis: 75%;
+        &:hover {
+            color: $light-brown;
+            text-decoration: underline;
+            text-decoration-color: $light-brown;
+        }
+        &:active {
+            color: $menu-button-brown;
+            text-decoration: underline;
+            text-decoration-color: $menu-button-brown
+        }
     }
     &__show {
         width: 100%;

@@ -1,9 +1,11 @@
 .slider {
-    &\--features &__nav-item\--active {
-        background-color: white;
-    }
-    &\--review &__nav-item\--active {
-        background-color: #353535;
+    @media(max-width: $tablet - 1) {
+        &\--features &__nav-item\--active {
+            background-color: white;
+        }
+        &\--review &__nav-item\--active {
+            background-color: #353535;
+        }
     }
     &__content {
         display: flex;

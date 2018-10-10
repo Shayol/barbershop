@@ -6,7 +6,7 @@
         height: 100%;
         width: 8px;
         top: 0;
-        left: 0; 
+        left: 0;
         background: rgb(0, 0, 0);
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.05) 100%);
     }
@@ -17,6 +17,12 @@
         display: flex;
         align-items: center;
         padding-left: 20px;
+        &:hover {
+            background-color: #755a46;
+        }
+        &:active {
+            background-color: $menu-button-brown;
+        }
     }
     &__item-enter {
         background-color: $menu-button-brown;
@@ -28,6 +34,9 @@
         text-transform: uppercase;
         text-decoration: none;
         font-weight: bold;
+        &:active {
+            opacity: 0.3;
+        }
     }
     &__enter-link {
         text-transform: none;
