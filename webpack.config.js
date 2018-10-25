@@ -28,7 +28,7 @@ module.exports = {
     },
     {
       test: /\.html$/,
-      //exclude: /photos-partial\.html$/, //without this the underscore template won't be executed.
+      exclude: /(index|form|photos)\.html$/, //without this the underscore template won't be executed.
       include: path.join(__dirname, 'src/html'),
       use: [{
         loader: "html-loader",
@@ -101,17 +101,20 @@ module.exports = {
     new HtmlWebPackPlugin({
       title: 'Index',
       template: "./src/html/index.html",
-      filename: "./index.html"
+      filename: "./index.html",
+      pageHeader: "Главная"
     }),
     new HtmlWebPackPlugin({
       title: 'Form',
       template: "./src/html/form.html",
-      filename: "./form.html"
+      filename: "./form.html",
+      pageHeader: "Записаться"
     }),
     new HtmlWebPackPlugin({
       title: 'Photos',
       template: "./src/html/photos.html",
-      filename: "./photos.html"
+      filename: "./photos.html",
+      pageHeader: "Наши работы"
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",

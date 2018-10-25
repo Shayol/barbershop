@@ -17,15 +17,25 @@
     }
     &__text-content {
         flex-basis: 75%;
+        width: 75%;
     }
     &__photo {
         width: 50px;
         height: 50px;
         margin-top: 5px;
-        background-image: url("../img/trevis-mobile.png");
         background-repeat: no-repeat;
-        background-position: 50% 50%;
+        background-position: center;
+        background-size: cover;
         flex-shrink: 0;
+        &\--1 {
+            background-image: url("../img/trevis-mobile.png");
+        }
+        &\--2 {
+            background-image: url("../img/vanya.jpg");
+        }
+        &\--3 {
+            background-image: url("../img/alien.png");
+        }
     }
     &__author {
         font-size: 24px;
@@ -91,7 +101,9 @@
             margin-left: auto;
             margin-right: auto;
             border-radius: 50%;
-            background-image: url("../img/trevis-tablet.png");
+            &\--1 {
+                background-image: url("../img/trevis-tablet.png");
+            }
         }
         &__text-content {
             flex-basis: 74%;
@@ -103,7 +115,9 @@
             width: 250px;
             border-radius: 0;
             height: 166px;
-            background-image: url("../img/trevis-desktop.png");
+            &\--1 {
+                background-image: url("../img/trevis-desktop.png");
+            }
         }
         &__prev {
             border-right: 1px solid $border-grey;

@@ -14,8 +14,15 @@
         ${require("./partials.form/popup-failure.html")}
         ${require("./partials.common/login.html")}
         ${require("./partials.common/top-logo.html")}
-        ${require("./partials.common/top-menu-mobile.html")}
-        ${require("./partials.common/hero.html")}
+        <div class="top-menu-mobile page__top-menu-mobile">
+            <h1 class="top-menu-mobile__text">
+                <%= htmlWebpackPlugin.options.pageHeader %>
+            </h1>
+            ${require("./partials.common/top-menu-mobile.html")}
+        </div>
+        <div class="hero page__hero hero--small">
+            ${require("./partials.common/hero.html")}
+        </div>
         ${require("./partials.form/form-partial.html")}
         ${require("./partials.common/footer.html")}
     </div>
