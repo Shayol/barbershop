@@ -12,6 +12,10 @@
         padding-top: 11px;
         padding-bottom: 12px;
         width: 100%;
+        @include footer-hover-mixin;
+        &:active {
+            color: rgba(255, 255, 255, 0.3);
+        }
     }
     @media(min-width: $tablet) {
         padding-top: 0;

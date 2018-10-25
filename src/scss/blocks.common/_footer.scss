@@ -40,6 +40,10 @@
         padding-top: 11px;
         padding-bottom: 10px;
         width: 100%;
+        @include footer-hover-mixin;
+        &:active {
+            opacity: 0.3;
+        }
     }
     &__social {
         margin-left: -20px;

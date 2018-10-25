@@ -1,0 +1,9 @@
+@mixin footer-hover-mixin {
+    &:hover {
+        border-color: $border-hover-color;
+    }
+    &:active {
+        background-color: #252525;
+        border-color: #252525;
+    }
+}
